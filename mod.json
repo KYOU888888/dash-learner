@@ -1,0 +1,46 @@
+{
+	"geode": "5.9.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "pierre.dash-learner",
+	"name": "Dash Learner",
+	"version": "v1.0.0",
+	"developer": "Pierre",
+	"description": "Un bot qui apprend tout seul a finir un niveau par essais et erreurs.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"default": true,
+			"name": "Bot actif",
+			"description": "Le bot prend le controle des niveaux classiques (pas plateforme, pas mode practice)."
+		},
+		"speed": {
+			"type": "int",
+			"default": 1,
+			"min": 1,
+			"max": 8,
+			"name": "Vitesse d'entrainement",
+			"description": "Accelere le jeu pendant l'apprentissage (x1 a x8). Coupe la musique si tu montes la vitesse.",
+			"control": {
+				"slider": true,
+				"arrows": true
+			}
+		},
+		"safe-mode": {
+			"type": "bool",
+			"default": true,
+			"name": "Mode sans sauvegarde",
+			"description": "Les pourcentages et completions faits par le bot ne sont pas enregistres comme les tiens."
+		},
+		"show-overlay": {
+			"type": "bool",
+			"default": true,
+			"name": "Afficher les infos",
+			"description": "Affiche essais, record et etat du bot en haut a gauche."
+		}
+	}
+}
